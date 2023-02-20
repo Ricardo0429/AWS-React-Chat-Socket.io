@@ -20,10 +20,7 @@ const ChatWindow = props => {
             maxAttempts: 1,
             onopen: e => console.log("connected:", e),
             onmessage: e => onMessageReceied(e),
-            onreconnect: e => console.log("Reconnecting...", e),
-            onmaximum: e => console.log("Stop Attempting!", e),
-            onclose: e => console.log("Closed!", e),
-            onerror: e => console.log("Error:", e)
+    
           }
         );
       return function cleanup() {
